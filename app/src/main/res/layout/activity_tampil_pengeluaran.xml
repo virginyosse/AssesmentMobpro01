@@ -18,6 +18,8 @@
         app:cardElevation="5dp"
         app:contentPadding="16dp">
 
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -44,6 +46,11 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvKet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTotal"/>
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
@@ -73,6 +80,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnHapus"
+        android:background="@color/aqua"
         android:layout_width="171dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -89,6 +97,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
+        android:background="@color/aqua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -96,7 +105,8 @@
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="65dp"
         android:src="@drawable/id_add"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        />
 
     <TextView
         android:id="@+id/tvNotFound"
