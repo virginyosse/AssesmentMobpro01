@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize' // semua atribut data class dianggap 1 data
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "org.d3if3117.assesment01"
-        minSdk 24
+        minSdk 30
         targetSdk 33
         versionCode 1
         versionName "1.0"
