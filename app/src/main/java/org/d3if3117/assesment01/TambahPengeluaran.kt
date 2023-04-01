@@ -28,8 +28,6 @@ class TambahPengeluaran : AppCompatActivity() {
         ViewModelProvider(this, factory)[PengeluaranViewModel::class.java]
     }
 
-//    private val list = arrayListOf<Pengeluaran>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTambahPengeluaranBinding.inflate(layoutInflater)

@@ -23,6 +23,8 @@ class PengeluaranViewModel(val pengeluaranDao: PengeluaranDao) : ViewModel() {
 
     fun getAllPengeluaran(): LiveData<List<Pengeluaran>> = pengeluaranDao.getAllPengeluaran()
 
+    fun deleteAllPengeluaran() = pengeluaranDao.deleteAllPengeluaran()
+
     fun insertPengeluaran(keterangan: String, tanggal: String, jumlah: Int) {
         val data = Pengeluaran(
             keterangan = keterangan,

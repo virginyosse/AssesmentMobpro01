@@ -34,19 +34,13 @@ class TampilPengeluaran : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val ket = intent.getStringExtra("ket")
-        binding.tvKet.text = ket
-
-        val jmlUang = intent.getStringExtra("jmlUang")
-        binding.tvTotal.text = jmlUang
-
-//        binding.fabAdd.setOnClickListener {
-//            val intent = Intent(this@TampilPengeluaran, TambahPengeluaran::class.java)
-//            startActivity(intent)
-//        }
+//        val ket = intent.getStringExtra("ket")
+//        binding.tvKet.text = ket
 //
-//        //GET INTENT
-////        val i = this.intent
+//        val jmlUang = intent.getStringExtra("jmlUang")
+//        binding.tvTotal.text = jmlUang
+
+
         val list = arrayListOf<Pengeluaran>()
 //
 //        if (intent.hasExtra("coba")) {
@@ -75,6 +69,8 @@ class TampilPengeluaran : AppCompatActivity() {
         }
 //
         Log.wtf("coba", "$list")
+
+        binding.btnHapus.setOnClickListener { viewModel.deleteAllPengeluaran() }
 //
 //
 //        //RECEIVE DATA

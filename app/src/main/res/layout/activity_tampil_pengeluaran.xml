@@ -5,62 +5,62 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvTotal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        app:cardBackgroundColor="@android:color/white"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp"
-        app:contentPadding="16dp">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cvTotal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        app:cardBackgroundColor="@android:color/white"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        app:contentPadding="16dp">-->
 
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:text="Total Pengeluaran Bulan Ini:"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvTitle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:text="Total Pengeluaran Bulan Ini:"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp" />-->
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvTotal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tvTitle"
-                android:layout_marginTop="4dp"
-                android:text="Rp -"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvTotal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/tvTitle"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:text="Rp -"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvKet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tvTotal"/>
-        </RelativeLayout>
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tvKet"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/tvTotal"/>-->
+<!--        </RelativeLayout>-->
 
-    </androidx.cardview.widget.CardView>
+<!--    </androidx.cardview.widget.CardView>-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvListData"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/btnHapus"
-        android:layout_below="@id/cvTotal"
+
         android:layout_marginHorizontal="8dp"
         android:layout_marginTop="16dp" />
 
@@ -78,17 +78,16 @@
     <!--        android:textAllCaps="false"-->
     <!--        android:textColor="@android:color/black" />-->
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnHapus"
-        android:background="@color/aqua"
         android:layout_width="171dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="119dp"
+        android:layout_marginStart="110dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="71dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="65dp"
         android:layout_toStartOf="@+id/fabAdd"
         android:fontFamily="sans-serif"
         android:text="Hapus Semua"
@@ -97,7 +96,6 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
-        android:background="@color/aqua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

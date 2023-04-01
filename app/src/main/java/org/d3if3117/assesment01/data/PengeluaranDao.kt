@@ -14,6 +14,9 @@ interface PengeluaranDao {
     @Insert
     suspend fun insertPengeluaran(pengeluaran: Pengeluaran)
 
-    @Query("TRUNCATE pengeluaran")
-    suspend fun deleteAllPengeluaran()
+//    @Query("TRUNCATE pengeluaran")
+//    suspend fun deleteAllPengeluaran()
+
+    @Query("DELETE FROM pengeluaran")
+    fun deleteAllPengeluaran()
 }
