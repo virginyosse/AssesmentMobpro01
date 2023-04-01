@@ -68,9 +68,11 @@ class TampilPengeluaran : AppCompatActivity() {
             }
         }
 //
-        Log.wtf("coba", "$list")
+//        Log.wtf("coba", "$list")
 
-        binding.btnHapus.setOnClickListener { viewModel.deleteAllPengeluaran() }
+        binding.btnHapus.setOnClickListener {
+            viewModel.deleteAllPengeluaran()
+        }
 //
 //
 //        //RECEIVE DATA

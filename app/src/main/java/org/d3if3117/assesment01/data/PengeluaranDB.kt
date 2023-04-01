@@ -18,6 +18,7 @@ abstract class PengeluaranDB : RoomDatabase() {
             return instance ?: synchronized(this) {
                 Room.databaseBuilder(context, PengeluaranDB::class.java, "pengeluaran.db")
                     .fallbackToDestructiveMigration()
+                    .allowMainThreadQueries()
                     .build()
                     .also { instance = it }
             }

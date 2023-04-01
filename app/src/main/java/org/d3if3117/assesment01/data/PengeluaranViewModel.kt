@@ -21,7 +21,7 @@ class PengeluaranViewModelFactory(private val pengeluaranDao: PengeluaranDao) :
 class PengeluaranViewModel(val pengeluaranDao: PengeluaranDao) : ViewModel() {
     private val pengeluaran = MutableLiveData<Pengeluaran?>()
 
-    fun getAllPengeluaran(): LiveData<List<Pengeluaran>> = pengeluaranDao.getAllPengeluaran()
+    fun getAllPengeluaran(): LiveData<List<Pengeluaran>> = pengeluaranDao.getAllPengeluaran().asLiveData()
 
     fun deleteAllPengeluaran() = pengeluaranDao.deleteAllPengeluaran()
 
